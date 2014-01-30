@@ -1,0 +1,494 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="google-site-verification" content="7XQxP37LHkUyfJVgIZJHj5eKJuyRgYjodcEuPV4pbTM" /><title>
+
+</title><link rel="stylesheet" type="text/css" href="/assets/css/layout.css?12" />
+<link rel="stylesheet" type="text/css" href="/assets/css/brickset.css?80" />
+<link rel="stylesheet" type="text/css" href="/assets/js/highslide/highslide.css" />
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="/assets/js/jQueryUI/css/override.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/brickset-css3.css?27" />
+<link rel="stylesheet" type="text/css" href="/assets/js/tableSorter/blue/style.css" />
+	
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="../assets/css/ie7.css" /><![endif]-->
+<link rel="shortcut icon" href="http://www.brickset.com/favicon.ico" type="image/x-icon" /><link rel="alternate" type="application/rss+xml" title="Brickset: Sets added to the database" href="http://www.brickset.com/rss/" /><link rel="alternate" type="application/rss+xml" title="Brickset: News" href="http://www.brickset.com/rss/news/" /><link rel="alternate" type="application/rss+xml" title="Brickset: News without Amazon alerts" href="http://www.brickset.com/rss/news/?noAmazon" /><link rel="alternate" type="application/rss+xml" title="Brickset: New sets added to LEGOshop.com (UK)" href="http://www.brickset.com/rss/legoshop/uk/new/" /><link rel="alternate" type="application/rss+xml" title="Brickset: New sets added to LEGOshop.com (US)" href="http://www.brickset.com/rss/legoshop/us/new/" /><link rel="search" type="application/opensearchdescription+xml" href="http://www.brickset.com/search.xml" title="Brickset" /><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" ></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js" ></script>
+<script type="text/javascript" src="/assets/js/hoverIntent/jquery.hoverIntent.min.js" ></script>
+<script type="text/javascript" src="/assets/js/highslide/highslide-with-html.packed.js" ></script>
+<script type="text/javascript" src="/assets/js/lazyLoad/jquery.lazyload.min.js" ></script>
+<script type="text/javascript" src="/assets/js/brickset.js?12" ></script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=hmillington" ></script>
+<script type="text/javascript" src="/assets/js/tableSorter/jquery.tablesorter.min.js" ></script>
+<script type="text/javascript" src="/assets/js/detail.js?1" ></script>
+<meta name="format-detection" content="telephone=no" /><link rel="apple-touch-icon" href="/assets/images/misc/iPhoneIcon.png" />
+<style type="text/css"></style>		
+</head>
+
+<body id="detail" class="twoCol" >
+
+	<div id="frame">
+		<div id="header">	
+			<div id="aboveNav" >
+
+				<div class="hidden">
+					<a accesskey="0" href="#content" >Skip to main content</a>
+				</div>
+				
+				<div id="homeLinkImage">	
+					<a title="Go to Brickset home page" href="../"><img class="homeImage" src="../assets/images/spacer.png" alt="Home" /></a>		
+				</div>
+                <div id="tagLine"><span>Brickset:</span> LEGO<i>®</i> set guide</div>
+				<div id="securityMenu">
+                    <ul>
+
+					    
+
+					    	
+						    <li class="sep"><a title="Log in to brickset" href="../security/login/">Log in</a></li>
+						    <li class="sep signUp"><a title="Become a member to get the most out of the site" href="../security/register/">Sign up</a></li>
+					    	
+                        <li class="sep"><a title="Read how and why Brickset uses cookies" href="../about/cookies/">Cookies</a></li>
+
+                        <li>
+                            <a href="/profile/setCountry/"><img title="Your country is set to United States. Click to change it. " src="/assets/images/flags/US.png" /></a>
+                        </li>                    
+                    </ul>
+				</div>	
+
+
+
+		
+				<div id="searchForm">
+					<form action="/search/switch/" id="topSearchForm">
+						<p>Search: 
+							<select name="scope" id="searchScope">
+								<option value="sets" selected>Sets</option>
+								<option value="minifigs" >Minifigs</option>
+								<option value="parts" >Parts</option>
+								<option value="bricklists" >BrickLists</option>
+								<option value="news" >News</option>	
+																        
+							</select>
+							<input type="text" id="searchQuery" name="query" value=""/><input type="submit" value="Go" />
+						</p>					
+					</form>
+				</div>
+			</div>				
+		
+            
+
+<ul id="mainNav">
+	<li class="defaultTab mega">
+		<a accesskey="1" class="t" href="../">Home</a>
+		<div class="content">
+            <div >
+			    <h3>Home</h3>  
+			    <ul>  
+				    <li><a href="/news/">News archive</a></li>
+				    <li><a href="/news/?mostread">Most read articles</a></li>
+
+                	<li><a href="/search/advanced/run/?q=44">New  in the database</a></li> 
+			    </ul>
+            </div>
+             
+                                 
+			<ul  class="more">
+				<li><a href="/">Go to home page</a></li>
+			</ul>                         
+		</div>	   			    
+	</li>
+			
+
+
+	<li class="browseTab mega">
+		<a accesskey="2" class="t" href="../browse/">Browse</a>
+		<div  class="content">  
+            <div>
+			    <h3>Browse</h3>
+			    <ul>  
+				    <li><a href="/browse/">Sets</a></li>   
+				    <li><a href="/minifigs/browse/">Minifigs</a></li>
+				    <li><a href="/parts/browse/">Parts</a></li>
+			    </ul>  
+			    <h3>Sets released in...</h3>  
+			    <ul>
+				    <li><a href="/browse/years/?year=2014">2014</a></li> 
+				    <li><a href="/browse/years/?year=2013">2013</a></li> 
+				    <li><a href="/browse/years/?year=2012">2012</a></li>  
+				    <li><a href="/browse/years/?year=2011">2011</a></li>  
+				    <li><a href="/browse/years/?year=2010">2010</a></li>   
+			    </ul>                   
+
+            </div>
+            <div>
+			    <h3>New for 2014</h3>  
+			    <ul>  
+				    <li><a href="/browse/themes/?year=2014&theme=Star Wars">Star Wars</a></li>
+				    <li><a href="/browse/themes/?year=2014&theme=City">City</a></li>
+				    <li><a href="/browse/themes/?year=2014&Theme=Friends">Friends</a></li>  
+                    <li><a href="/browse/themes/?theme=Super Heroes&year=2014">Super Heroes</a></li>                    		    
+                    <li><a href="/browse/themes/?theme=Disney Princess">Disney Princess</a></li> 
+                    <li><a href="/browse/themes/?year=2014&Theme=The LEGO Movie">The LEGO Movie</a>
+                </ul> 
+            </div>
+			<ul  class="more">
+				<li><a href="/browse/">More...</a></li>
+			</ul>                                                                                                                                                             
+		</div> 	   			    
+	</li>
+				
+	<li class="buyTab mega">
+		<a accesskey="3" class="t" href="/buy/US/">Buy</a>
+		<div  class="content">
+            <div>
+                
+			        <h3>Buy at LEGO.com</h3>
+			        <ul>  
+				        <li><a href="/buy/US/?new">What's new</a></li> 
+    			        <li><a href="/buy/US/?sale">On sale</a></li>
+			        </ul>
+                
+
+                
+
+				<h3>Buy LEGO books</h3>                         
+				<ul>
+					<li><a href="/buy/books/">For AFOLs</a> |
+					<a href="/buy/books/?kids">For kids</a></li>
+				</ul>
+
+				<h3>Brickset merchandise</h3>                         
+				<ul>
+					<li><a href="/miscellaneous/merchandise/">Brickset apparel</a></li>
+				</ul>
+
+                
+            </div>
+            <div>
+			    <h3>Amazon Bargain Watch lists</h3>                         
+			    <ul>
+				    <li><a href="/buy/US/amazon/">USA</a></li>
+				    <li><a href="/buy/UK/amazon/">UK</a></li>
+				    <li><a href="/buy/DE/amazon/">Germany</a></li>
+				    <li><a href="/buy/FR/amazon/">France</a></li>
+				    <li><a href="/buy/IT/amazon/">Italy</a></li>
+				    <li><a href="/buy/ES/amazon/">Spain</a></li>
+				    <li><a href="/buy/CA/amazon/">Canada</a></li>
+			    </ul>
+                <h3>Compare EU Amazons</h3>
+                <ul>
+                    <li><a href="/buy/amazon/">European Amazon shopper</a></li>
+                </ul>
+            </div>            	   			    
+		</div>
+	</li>
+				
+	<li class="mySetsTab mega">
+		<a accesskey="5" class="t" href="../mySets/">My Sets</a>
+		<div  class="content">
+			 
+
+			  
+				<h3>Log in to use the My Sets features</h3>
+				<ul>
+					<li><a href="/security/login/">Log in</a></li>
+					<li><a href="/security/register/">Create account</a> </li>                           
+				</ul> 	   			            
+			                  
+		</div>	   			    
+	</li>
+
+    <li class="forumTab mega" >
+        <a accesskey="6" class="t" href="../forum/">Forum</a>
+        <div  class="content">
+            <div>
+            
+				<h3>Get more out of Brickset</h3>  
+				<ul>  
+                    Visit our thriving <a href="../forum/">discussion forum</a> to discuss all things LEGO-related!
+				</ul>    
+               
+              
+            </div>                            
+        </div>
+    </li>
+
+	<li class="moreTab mega">
+		<a accesskey="7" class="t" href="../more/">More...</a>
+		<div  class="content">
+            <div>
+			    <h3>Cool stuff...</h3>  
+			    <ul>  
+				    <li><a href="/BrickLists/">BrickLists</a></li>   
+				    <li><a href="/reviews/">Reviews</a></li>
+				    <li><a href="/reviews/videos/">Video reviews</a></li>
+ 				    <li><a href="/instructions/">Instructions</a></li> 
+ 				    <li><a href="/inventories/">Inventories</a></li> 
+				    <li><a href="/search/advanced/">Advanced queries</a></li>                                                                            
+				    <li><a href="/myFriends/">My Friends</a> </li>
+				    <li><a href="/minifigs/gallery/">Minifig gallery</a></li>
+			    </ul>
+            </div>
+            <div>
+			    <h3>Site related</h3>
+			    <ul>
+				    <li><a href="/about/">About Brickset</a></li>
+				    <li><a href="/about/privacy/">Privacy policy</a></li>
+				    <li><a href="/about/cookies/">Cookie information</a></li>
+				    <li><a href="/about/stats/">Statistics</a></li>
+				    <li><a href="/search/google/">Google site search</a></li>
+                </ul>
+                <h3>Get in touch</h3>
+                <ul>                            
+				    <li><a href="/contact/">Contact us</a></li>                           
+			    </ul>
+                        
+			</div>	
+			<ul  class="more">
+				<li><a href="/more/">More...</a></li>
+			</ul>  
+		</div>	   			    
+	</li>
+
+</ul>  
+
+
+		</div>
+	
+		<a name="content"></a>
+		<div id="b1"><div id="b2"><div id="b3">
+			<div id="mainContentWrapper">
+				<div id="featurePanel" class="panel">
+														
+				</div>
+				
+				<div id="mainContent" >
+					
+			
+					<div id="breadcrumbs">
+						<ul id='breadcrumbs'><li><a title="Brickset home page" href="../">Home</a></li><li><a href="../browse/">Browse</a></li></ul>
+					</div>
+					
+					<div id="pageTitle">
+						<h1></h1>
+					</div>
+					
+					<div id="pageBody">
+						
+
+    
+
+
+ 
+    
+
+ 
+       <div class="setDetailTabs" >
+            <div id="imageTabs" class="ui-tabs"  style="display:none"  > 
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="setDetailTabs" >
+            <div id="detailTabs" class="ui-tabs" style="display:none" > 
+                <ul>
+                     
+                    <li>
+                        <a href="../ajax/setTabs/links.aspx?set=">
+                            Links
+                            <i class='count'>14</i></a>
+                    </li> 
+                     
+
+
+                </ul> 
+            </div>   
+        </div>
+
+      
+	
+					</div>
+				</div>
+				
+				<div id="menuPanel" class="panel">
+					
+    
+
+<div class="menuPanel">
+    <h3>Set details</h3>
+    <ul class="setDetails">
+
+        <li><span>Set type</span>
+        </li>
+
+        <li><span>Theme group</span>
+        </li>
+
+        <li><span>Theme</span>
+        <a></a></li>
+    
+
+        <li id="ctl00_menuPanel_setDetails_subthemePanel"><span>Subtheme</span>
+        <a></a></li>	  
+
+        <li><span>Year released</span>
+        <a></a></li>	
+
+        <li id="ctl00_menuPanel_setDetails_piecesPanel"><span>Pieces</span>
+        </li>	
+
+        <li id="ctl00_menuPanel_setDetails_minifigsPanel"><span>Minifigs</span>
+        </li>	    
+
+        <li id="ctl00_menuPanel_setDetails_RRPPanel"><span>RRP</span>
+        </li>
+
+        <li id="ctl00_menuPanel_setDetails_PPPPanel"><span>Price per piece</span>
+        </li>
+
+        <li id="ctl00_menuPanel_setDetails_AgeRangePanel"><span>Age range</span>
+        </li>
+
+        <li id="ctl00_menuPanel_setDetails_PackagingPanel"><span>Packaging</span>
+        </li>
+
+        <li id="ctl00_menuPanel_setDetails_DimensionsPanel"><span>Packaging Dimensions </span>
+        </li>
+
+        <li id="ctl00_menuPanel_setDetails_WeightPanel"><span>Weight</span>
+        </li>
+
+        <li id="ctl00_menuPanel_setDetails_BarcodesPanel"><span>Barcodes</span>
+            
+        </li>
+
+        <li id="ctl00_menuPanel_setDetails_ItemNumbersPanel"><span>LEGO item numbers</span>
+        </li>
+
+        <li id="ctl00_menuPanel_setDetails_AvailabilityPanel"><span>Availability</span>
+        </li>
+
+        <li id="ctl00_menuPanel_setDetails_NotesPanel"><span>Notes</span>
+        
+        
+        </li>
+        
+        <li><span>Change log</span>
+            <a>View change log</a>
+        </li>	
+    </ul>
+</div>
+<div class="menuPanel">
+
+    <h3>Availability at LEGO.com</h3>
+    <ul class="setDetails">  
+    
+        <li><span>United States</span>
+        </li>
+    
+        <li><span>United Kingdom</span>
+        </li>	
+
+        <li><span>Canada</span>
+        </li>	    
+    
+    </ul>
+</div>
+
+
+
+
+
+
+<div class="menuPanel myCollection" >
+    <h3>Your Collection</h3>
+    <div id="own0" class="">
+        <input  type="checkbox" value="0;0" class="ownCheckbox" id="own0" />
+        <label for="own0"> I own </label>
+        <input disabled="disabled" type="text" class="qtyOwned" id="qty0" value="0" name="0;0" /> 
+        <label for="qty0">of this set</label>
+    </div>
+    
+    <div id="want0" class="w ">     
+        <input  type="checkbox" value="0;0" class="wantCheckbox" id="want0" />
+        <label for="want0"> I want this set</label>	
+    </div>    
+    <h3 style="margin-top:10px">Your Notes</h3>
+    <textarea cols="" rows="" id="ta0;0" class="notesEdit"></textarea>
+    <input name="0;0" type="button" class="notesSave" value="Save note" />
+ 			
+</div>
+
+
+<div class="menuPanel">
+
+            
+
+<h3>Barcodes</h3>
+
+
+
+
+    <p>No barcodes available</p>
+
+
+
+
+        
+
+
+
+        </div>
+				
+				</div>               
+								
+				<div class="clear" ></div>
+                <div id="megaFooter" >
+                </div>
+			</div>	
+		</div></div></div>
+
+
+
+		<div id="footer">
+			<p>LEGO, the LEGO logo, the Minifigure, and the Brick and Knob configurations are trademarks of the LEGO Group of Companies. &copy;2014 <a title="Go to LEGO.com" href="http://www.lego.com">The LEGO Group.</a></p>
+			<p>Brickset, the Brickset logo and all content not covered by LEGO's copyright is &copy;1997-2014 Brickset ltd.</p>
+			<p>Your IP address is 97.75.189.62 and Brickset thinks you are in United States.</p>
+
+            <p><br />This page took <strong>15000ms</strong> to generate.</p>
+		</div>
+	</div>
+	
+	
+	
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<script type="text/javascript">_qacct = "p-62IS0sm0uHgLU"; quantserve();</script>
+<noscript>
+<a href="http://www.quantcast.com/p-62IS0sm0uHgLU" ><img src="http://pixel.quantserve.com/pixel/p-62IS0sm0uHgLU.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/></a>
+</noscript>
+<!-- End Quantcast tag -->
+
+<!-- Start Google Analytics tag -->    
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+ </script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-7345914-1");
+        pageTracker._trackPageview();
+    } catch (err) { }
+</script>    
+<!-- End Google Analytics tag -->
+
+	
+</body>
+
+</html>
+
