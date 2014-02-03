@@ -1,12 +1,13 @@
 <?php
   require_once __DIR__ . '/lib/php-SAI-0.1.2/lib/Curl.php';
   require_once __DIR__ . '/lib/simple_html_dom.php';
-  require_once __DIR__ . '/lib/firebaseLib.php';
+  require_once __DIR__ . '/lib/firebase/firebaseLib.php';
 
   class Lego {
-    public function __construct($setNumber, $curlObject=null) {
+    public function __construct($setNumber, $curlObject=null, $firebaseObject=null) {
       $this->setNumber = $setNumber;
       $this->curlObject = $this->getCurlObject($curlObject);
+      $this->firebaseObject = $this->getFirebaseObject($firebaseObject);
     }
 
     public function getLegoSetInformation() {
@@ -22,13 +23,11 @@
     }
 
     public function persistSetToFirebase() {
-      $firebase = new Firebase('https://radiant-fire-2427.firebaseio.com', 'czvEX8vMU8FZn4wYCvf466P3J6zH5ZlKQeuwxmEZ');
-      echo $firebase->set('legoSet/67011', "{'set': 67011, 'price': 19.99, 'year': 1999}");
+      echo $this->firebaseObject->set('legoSet/67011', '{"set": 67011, "price": 19.99, "year": 1999}');
     }
 
     public function getSetFromFirebase() {
-      $firebase = new Firebase('https://radiant-fire-2427.firebaseio.com', 'czvEX8vMU8FZn4wYCvf466P3J6zH5ZlKQeuwxmEZ');
-      echo $firebase->get('legoSet/67011');
+      echo $this->firebaseObject->get('legoSet/67011');
     }
 
     private function isTheLegoSetInTheDatabase() {
@@ -41,6 +40,10 @@
 
     private function getCurlObject($curlResource) {
       return ($curlResource ? $curlResource : new SAI_Curl());
+    }
+
+    private function getFirebaseObject($firebaseObject) {
+      return ($firebaseObject ? $firebaseObject : new Firebase('https://radiant-fire-2427.firebaseio.com', 'czvEX8vMU8FZn4wYCvf466P3J6zH5ZlKQeuwxmEZ'));
     }
 
     private function getSetNumber() {

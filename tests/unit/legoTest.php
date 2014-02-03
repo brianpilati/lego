@@ -4,6 +4,7 @@
     public function testGetLegoSetInformation() {
 
       $curl = new SAI_CurlStub();
+      $firebase = new FirebaseStub("https://myfirebase.firebaseio.com");
 
       // Set up the CurlStub
       $defaultOptions = array(
@@ -14,17 +15,19 @@
       //$curl->setResponse('fallback response');
       $curl->setResponse('<html><header></header><body><img src="bingo"></body></html>', $defaultOptions);
 
-      $legoObj = new Lego(76011, $curl);
+      $legoObj = new Lego(76011, $curl, $firebase);
       $legoObj->getLegoSetInformation();
     }
 
     public function testPersistSetToFirebase() {
-      $legoObj = new Lego(76011, $curl);
+      $firebase = new FirebaseStub("https://myfirebase.firebaseio.com");
+      $legoObj = new Lego(76011, $curl, $firebase);
       $legoObj->persistSetToFirebase();
     }
 
     public function testGetSetFromFirebase() {
-      $legoObj = new Lego(76011, $curl);
+      $firebase = new FirebaseStub("https://myfirebase.firebaseio.com");
+      $legoObj = new Lego(76011, $curl, $firebase);
       $legoObj->getSetFromFirebase();
     }
   }
