@@ -19,7 +19,7 @@
 
       $domObject = str_get_html($htmlString);
       foreach($domObject->find('img') as $element)
-             echo $element->src . "\n";
+             $element->src . "\n";
     }
 
     public function persistSetToFirebase() {

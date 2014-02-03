@@ -1,11 +1,14 @@
 <?php
   class LegoTest extends PHPUnit_Framework_TestCase
   {
+
+    public function setUp()
+    {
+      $this->_curl = new SAI_CurlStub();
+      $this->_firebase = new FirebaseStub("https://myfirebase.firebaseio.com");
+    }
+
     public function testGetLegoSetInformation() {
-
-      $curl = new SAI_CurlStub();
-      $firebase = new FirebaseStub("https://myfirebase.firebaseio.com");
-
       // Set up the CurlStub
       $defaultOptions = array(
           CURLOPT_URL => 'http://brickset.com/detail/?set=76011',
@@ -13,21 +16,19 @@
       );
 
       //$curl->setResponse('fallback response');
-      $curl->setResponse('<html><header></header><body><img src="bingo"></body></html>', $defaultOptions);
+      $this->_curl->setResponse('<html><header></header><body><img src="bingo"></body></html>', $defaultOptions);
 
-      $legoObj = new Lego(76011, $curl, $firebase);
+      $legoObj = new Lego(76011, $this->_curl, $this->_firebase);
       $legoObj->getLegoSetInformation();
     }
 
     public function testPersistSetToFirebase() {
-      $firebase = new FirebaseStub("https://myfirebase.firebaseio.com");
-      $legoObj = new Lego(76011, $curl, $firebase);
+      $legoObj = new Lego(76011, $this->_curl, $this->_firebase);
       $legoObj->persistSetToFirebase();
     }
 
     public function testGetSetFromFirebase() {
-      $firebase = new FirebaseStub("https://myfirebase.firebaseio.com");
-      $legoObj = new Lego(76011, $curl, $firebase);
+      $legoObj = new Lego(76011, $this->_curl, $this->_firebase);
       $legoObj->getSetFromFirebase();
     }
   }
