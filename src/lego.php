@@ -1,7 +1,7 @@
 <?php
-  require_once __DIR__ . '/lib/php-SAI-0.1.2/lib/Curl.php';
-  require_once __DIR__ . '/lib/simple_html_dom.php';
-  require_once __DIR__ . '/lib/firebase/firebaseLib.php';
+  require_once __DIR__ . '/vendor/php-SAI-0.1.2/lib/Curl.php';
+  require_once __DIR__ . '/vendor/simple_html_dom.php';
+  require_once __DIR__ . '/vendor/firebase/firebaseLib.php';
 
   class Lego {
     private $_setNumber;
