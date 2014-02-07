@@ -6,16 +6,16 @@
   class Lego {
     public function __construct($setNumber, $curlObject=null, $firebaseObject=null) {
       $this->setNumber = $setNumber;
-      $this->curlObject = $this->getCurlObject($curlObject);
-      $this->firebaseObject = $this->getFirebaseObject($firebaseObject);
+      $this->setCurlObject($curlObject);
+      $this->setFirebaseObject($firebaseObject);
     }
 
     public function getLegoSetInformation() {
-      $ch = $this->curlObject->curl_init();
-      $this->curlObject->curl_setopt($ch, CURLOPT_URL , $this->buildTheBrickSetUrl());
-      $this->curlObject->curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      $htmlString = $this->curlObject->curl_exec($ch);
-      $this->curlObject->curl_close($ch);
+      $ch = $this->_curlObject->curl_init();
+      $this->_curlObject->curl_setopt($ch, CURLOPT_URL , $this->buildTheBrickSetUrl());
+      $this->_curlObject->curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+      $htmlString = $this->_curlObject->curl_exec($ch);
+      $this->_curlObject->curl_close($ch);
 
       $domObject = str_get_html($htmlString);
       foreach($domObject->find('img') as $element)
@@ -23,11 +23,11 @@
     }
 
     public function persistSetToFirebase() {
-      echo $this->firebaseObject->set('legoSet/67011', '{"set": 67011, "price": 19.99, "year": 1999}');
+      echo $this->_firebaseObject->set('legoSet/67011', '{"set": 67011, "price": 19.99, "year": 1999}');
     }
 
     public function getSetFromFirebase() {
-      echo $this->firebaseObject->get('legoSet/67011');
+      echo $this->_firebaseObject->get('legoSet/67011');
     }
 
     private function isTheLegoSetInTheDatabase() {
@@ -38,12 +38,12 @@
       return "http://brickset.com/detail/?set={$this->getSetNumber()}";
     }
 
-    private function getCurlObject($curlResource) {
-      return ($curlResource ? $curlResource : new SAI_Curl());
+    private function setCurlObject($curlResource) {
+      $this->_curlObject = ($curlResource ? $curlResource : new SAI_Curl());
     }
 
-    private function getFirebaseObject($firebaseObject) {
-      return ($firebaseObject ? $firebaseObject : new Firebase('https://radiant-fire-2427.firebaseio.com', 'czvEX8vMU8FZn4wYCvf466P3J6zH5ZlKQeuwxmEZ'));
+    private function setFirebaseObject($firebaseObject) {
+      $this->_firebaseObject = ($firebaseObject ? $firebaseObject : new Firebase('https://radiant-fire-2427.firebaseio.com', 'czvEX8vMU8FZn4wYCvf466P3J6zH5ZlKQeuwxmEZ'));
     }
 
     private function getSetNumber() {
