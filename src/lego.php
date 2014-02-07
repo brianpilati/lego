@@ -4,8 +4,12 @@
   require_once __DIR__ . '/lib/firebase/firebaseLib.php';
 
   class Lego {
+    private $_setNumber;
+    private $_curlObject;
+    private $_firebaseObject;
+
     public function __construct($setNumber, $curlObject=null, $firebaseObject=null) {
-      $this->setNumber = $setNumber;
+      $this->setLegoSetNumber($setNumber);
       $this->setCurlObject($curlObject);
       $this->setFirebaseObject($firebaseObject);
     }
@@ -46,8 +50,12 @@
       $this->_firebaseObject = ($firebaseObject ? $firebaseObject : new Firebase('https://radiant-fire-2427.firebaseio.com', 'czvEX8vMU8FZn4wYCvf466P3J6zH5ZlKQeuwxmEZ'));
     }
 
+    private function setLegoSetNumber($setNumber) {
+      $this->_setNumber = $setNumber;
+    }
+
     private function getSetNumber() {
-      return $this->setNumber;
+      return $this->_setNumber;
     }
 
   }
