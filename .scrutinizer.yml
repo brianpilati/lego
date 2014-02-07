@@ -5,11 +5,10 @@ tools:
   # Code Coverage
   php_code_coverage:
     enabled: true
-    test_command: phpunit
+    test_command: phpunit --bootstrap src/config/autoload.php tests/unit/legoTest.php
     filter:
       excluded_paths:
         - 'vendor/*'
-        - 'tests/*'
 
 
   # Code Sniffer
