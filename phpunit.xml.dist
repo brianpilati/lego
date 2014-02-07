@@ -1,17 +1,27 @@
 <?xml version="1.0"?>
 <phpunit
-    bootstrap="./src/config/autoload.php"
-    colors="true"
-    convertErrorsToExceptions="true"
-    convertNoticesToExceptions="true"
-    convertWarningsToExceptions="true"
-    verbose="true"
-    stopOnFailure="false"
-    processIsolation="false"
-    backupGlobals="false"
-    syntaxCheck="true"
+  bootstrap="./src/config/autoload.php"
+  colors="true"
+  convertErrorsToExceptions="true"
+  convertNoticesToExceptions="true"
+  convertWarningsToExceptions="true"
+  verbose="true"
+  stopOnFailure="false"
+  processIsolation="false"
+  backupGlobals="false"
+  syntaxCheck="true"
 >
-    <testsuite name="Lego tests">
-        <directory>./tests/unit</directory>
-    </testsuite>
+  <testsuite name="Lego tests">
+    <directory>./tests/unit</directory>
+  </testsuite>
+
+  <filter>
+    <whitelist>
+      <directory suffix=".php">./src</directory>
+      <exclude>
+        <directory suffix=".php">./src/vendor</directory>
+        <directory suffix=".php">./src/config</directory>
+      </exclude>
+    </whitelist>
+  </filter>
 </phpunit>
