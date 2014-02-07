@@ -23,7 +23,7 @@
 
       $domObject = str_get_html($htmlString);
       foreach($domObject->find('img') as $element)
-             $element->src . "\n";
+        $element->src . "\n";
     }
 
     public function persistSetToFirebase() {
@@ -39,7 +39,7 @@
     }
 
     private function buildTheBrickSetUrl() {
-      return "http://brickset.com/detail/?set={$this->getSetNumber()}";
+      return "http://brickset.com/detail/?set={$this->getLegoSetNumber()}";
     }
 
     private function setCurlObject($curlResource) {
@@ -54,7 +54,7 @@
       $this->_setNumber = $setNumber;
     }
 
-    private function getSetNumber() {
+    private function getLegoSetNumber() {
       return $this->_setNumber;
     }
 
