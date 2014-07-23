@@ -22,8 +22,8 @@
       $this->_curlObject->curl_close($ch);
 
       $domObject = str_get_html($htmlString);
-      foreach($domObject->find('img') as $element)
-        $element->src . "\n";
+      foreach($domObject->find('dt , dd') as $element)
+        echo $element->outertext . "\n";
     }
 
     public function persistSetToFirebase() {

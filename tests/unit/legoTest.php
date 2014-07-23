@@ -16,7 +16,8 @@
       );
 
       //$curl->setResponse('fallback response');
-      $this->_curl->setResponse('<html><header></header><body><img src="bingo"></body></html>', $defaultOptions);
+      $html = implode('', file('./tests/unit/artifacts/set76011.txt'));
+      $this->_curl->setResponse($html, $defaultOptions);
 
       $legoObj = new Lego(76011, $this->_curl, $this->_firebase);
       $legoObj->getLegoSetInformation();
